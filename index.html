@@ -5,18 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <style>
+    .button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0025fa;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #00065e}
+
+.button:active {
+  background-color: #001868;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+      </style>
   </head>
   <body>
-    <button onclick="subscribe()">Subscribe</button>
+    <button class="button" onclick="subscribe()">Receber Notificações</button>
+
+<div style="margin-top: 10%;" id="texto"> 
+Copie o Json que aparecer aqui e envie para o serviço de pusher
+</div>
 
     <script>
       async function subscribe() {
+       
         let sw = await navigator.serviceWorker.ready;
         let push = await sw.pushManager.subscribe({
           userVisibleOnly: true,
           applicationServerKey:
           'BLX0_LLErBSaGPuoelAw0DCmh-_Y7UXxqNl1UXHB5OjfWSEla9dNVxPGMJ5Ud0XdSqYi_WrWLi_5AKZGH3RDw7k'
         });
+
+        var teste = document.getElementById('texto');
+        teste.innerHTML = JSON.stringify(push);
         console.log(JSON.stringify(push));
       }
 

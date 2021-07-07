@@ -23,6 +23,6 @@ self.addEventListener('push', function(e) {
     ]
   };
   e.waitUntil(
-    self.registration.showNotification('Push Notification', options)
+    self.registration.showNotification('Tech4Humans', options)
   );
 });

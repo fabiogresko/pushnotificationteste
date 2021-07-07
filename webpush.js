@@ -13,5 +13,5 @@ webpush.setVapidDetails(
 );
 
 // This is the same output of calling JSON.stringify on a PushSubscription
-const pushSubscription = {"endpoint":"https://fcm.googleapis.com/fcm/send/fapt-Rcy0q4:APA91bEoaz1w0_KOQ4HItw9WJMGtyfbzL3K7oXAhkZ3jtDSIV3W_LPXLjMyBph57xXU-Vfz6nhzVW0FBi6Nhjk7x1ZXNOsKxhbcJlQlj3w3T_tblwdlfnLsWKwa1KM4o-CSSEybyJZ0w","expirationTime":null,"keys":{"p256dh":"BB4LJSkVKMjuiS8885ZF8PqibyutvJsF6SmhnjbMqk76uOU04ZJo-FOLxwWF-7s72UHUUdIcVlBFshNU3VIPQBM","auth":"26lXXujFM84FSYfxXbxOpQ"}};
-webpush.sendNotification(pushSubscription, 'TECH4HUMANS - FABIO');
+const pushSubscription = {"endpoint":"https://fcm.googleapis.com/fcm/send/fgvHELBq_hQ:APA91bHophOjqZqHx3KGzPPdfeGrilCZhktT3xG4z_G2oeuD9BvB4Nj0UsAczBBhnCsA1VAWV1bmUe-TO_AEm8bu5f-TArtWPR4_Vn_0DZYSdWYlmaIJPlNzt1ETGPMq687UPOWFyEfr","expirationTime":null,"keys":{"p256dh":"BO0TVnk3zj0clUpnDmwCw6A3xaMfD8IAjeIGcIffOlujylUuYusOnomVhTpd-2V5QAD65wyW1_-VvShob2vh98A","auth":"AgHUnk9hLar6ADVP0tEIzQ"}};
+webpush.sendNotification(pushSubscription, 'JUBILEU - FABIO');
